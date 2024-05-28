@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: url(../img/background/background_game.avif);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+/* Common */
+.text-center {
+    text-align: center !important;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+/* Main */
+#main {
+    
+}
+
+/* Header */
+#header {
+    margin: 0 auto;
+    background-color: green;
+    height: 70px;
+    width: 60%;
+}
+
+#header h1 {
+    color: #fff;
+    line-height: 70px;
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+}
+
+/* Scoreboard */
+#scoreboard {
+    margin: 0 auto;
+    background-image: url('../img/background/scoreboard_bg.jpg');
+    height: 80px;
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#scoreboard h1 {
+    color: rgb(192, 233, 11);
+    font-size: 35px;
+}
+
+#scoreboard p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Body */
+#body {
+
+}
+
+#body .player-name {
+    color: #fff;
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+}
+
+#body .btn-user-choices {
+    background-color: #fff;
+    width: 55%;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease; 
+}
+
+#body .btn-user-choices:hover {
+    transform: scale(1.1); 
+}
+
+#body .btn-user-choices:active {
+    transform: scale(0.9); 
+}
+
+#body .img-user-choices {
+    height: 140px;
+}
+
+#body .img-pc-choices {
+    margin-top: 9%;
+    height: 320px;
+}
+
+/* Create class to hide Waiting-PC-Choices Image */
+#img-waiting-pc-choices.close {
+    display: none;
+}
+
+/* Create class to hide PC-Choices Image */
+#img-pc-choices.close {
+    display: none;
+}
+
+/* Announcement */
+#announcement {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+/* Create class to show Announcement */
+#announcement.open {
+    display: flex;
+}
+
+#announcement .announcement-container {
+    background-color: #fff;
+    width: 550px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+#announcement .announcement-header {
+    background: #05a34c;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    color: gold;
+}
+
+#announcement .announcement-body {
+    padding: 16px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    flex-direction: column; 
+}
+
+.announcement-body h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: coral;
+}
+
+.announcement-body img {
+    
+}
+
+.announcement-body button {
+    background-color: cornflowerblue;
+    border: none;
+    color: #fff;
+    height: 36px;
+    width: 20%;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.announcement-body button:hover {
+    opacity: 0.9;
+}

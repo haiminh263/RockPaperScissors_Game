@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <!-- Main: Begin -->
+    <div id="main">
+        <!-- Header Section -->
+        <div id="header">
+            <h1 class="text-center">Rock-Paper-Scissors Game</h1>
+        </div>
+
+        <!-- Scoreboard Section -->
+        <div id="scoreboard">
+            <h1 class="text-center">Scoreboard</h1>
+            <p class="text-center">0 - 0</p>
+        </div>
+
+        <!-- Body Section -->
+        <div id="body">
+            <!-- User Section -->
+            <div class="col col-half text-center">
+                <h2 class="player-name">You</h2>
+                <button class="btn-user-choices" onclick="playGame('rock')">
+                    <img class="img-user-choices" src="./assets/img/choices/rock.png" alt="Rock">
+                </button>
+
+                <button class="btn-user-choices" onclick="playGame('paper')">
+                    <img class="img-user-choices" src="./assets/img/choices/paper.png" alt="Paper">
+                </button>
+                
+                <button class="btn-user-choices" onclick="playGame('scissors')">
+                    <img class="img-user-choices" src="./assets/img/choices/scissors.png" alt="Scissors">
+                </button>
+            </div>
+
+            <!-- Computer Section -->
+            <div class="col col-half text-center">
+                <h2 class="player-name">PC Player</h2>
+                <img id="img-waiting-pc-choices" class="img-pc-choices" src="./assets/img/choices/question_mark.jpg" alt="Computer Choice">
+                <img id="img-pc-choices" class="img-pc-choices" src="" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Main: End -->
+
+    <!-- Announcement Section: Begin-->
+    <div id="announcement">
+        <!-- Announcement Container -->
+        <div class="announcement-container">
+            <h1 class="announcement-header"></h1>
+
+            <div class="announcement-body">
+                <h2 class="text-center"></h2>
+
+                <img src="" alt="Announcement Image">
+
+                <button class="js-announcement-close">OK</button>
+            </div>
+        </div>
+    </div>
+    <!-- Announcement Section: End -->
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
